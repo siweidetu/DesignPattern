@@ -1,4 +1,4 @@
-package DesignPattern.strategy.pay;
+package main.java.strategy.pay;
 
 /**支付渠道*/
 public abstract class Payment {

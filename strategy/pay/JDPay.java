@@ -1,4 +1,4 @@
-package DesignPattern.strategy.pay;
+package main.java.strategy.pay;
 
 public class JDPay extends Payment{
 

@@ -1,4 +1,4 @@
-package DesignPattern.strategy.pay;
+package main.java.strategy.pay;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,6 +17,14 @@ public class PayStrategy {
         strategy.put(JD_PAY,new JDPay());
         strategy.put(WECHAT_PAY,new WeChatPay());
         strategy.put(UNION_PAY,new UnionPay());
+    }
+    
+    /***/
+    public static Payment get(String payKey){
+    	if(!strategy.containsKey(payKey)){
+    		return strategy.get(DEFAULT_PAY);
+    	}
+    	return strategy.get(payKey);
     }
 
 }
