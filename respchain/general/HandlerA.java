@@ -1,4 +1,4 @@
-package main.java.respchain;
+package main.java.respchain.general;
 
 public class HandlerA extends Handler {
 
